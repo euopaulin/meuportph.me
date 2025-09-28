@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const output = document.getElementById('output');
     const promptText = document.getElementById('prompt').textContent;
 
-    // --- ARTE ASCII E MENSAGENS INICIAIS ---
 const ASCII_ART = `
             ,----------------,              ,---------,
         ,-----------------------,          ,"        ,"|
@@ -35,11 +34,10 @@ Digite <span class="help-word">'help'</span> para visualizar os comandos do port
         output.scrollTop = output.scrollHeight;
     }
 
-    // Chama a função para exibir a arte na primeira carga
     initializeTerminal();
     input.focus(); 
 
-    // Mapeamento dos comandos e suas respostas
+    // Mapeamentos dos comandos
     const commands = {
         'help': `<span class="port2">Comandos disponíveis:</span> 
         - <span class="help-word">about</span>: Sobre mim, Paulo (Eng. Software, Geek).

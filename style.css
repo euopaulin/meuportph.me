@@ -23,7 +23,7 @@ body {
     padding: 20px;
     animation: fundoAnimado 7.5s infinite;
     background: linear-gradient(-45deg, #0e0d0d, #092c1e);
-    background-size: 400% 400%;
+    background-size: 400% 2000%;
     transition: background 5s ease;
 }
 
