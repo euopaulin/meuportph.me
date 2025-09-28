@@ -1,0 +1,112 @@
+@keyframes fundoAnimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+body {
+    /* Fundo preto clássico para terminal */
+    background-color: #000; 
+    /* Cor de texto principal (verde neon) */
+    color: #00FF41; 
+    /* Fonte monoespaçada é obrigatória! */
+    font-family: 'Fira Code', 'Inconsolata', monospace;
+    font-size: 17px;
+    margin: 0;
+    padding: 20px;
+    animation: fundoAnimado 7.5s infinite;
+    background: linear-gradient(-45deg, #0e0d0d, #092c1e);
+    background-size: 400% 400%;
+    transition: background 5s ease;
+}
+
+#terminal-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Garante que o texto da Arte ASCII preserve os espaços */
+#output pre {
+    margin: 0;
+    white-space: pre;
+    color: inherit; /* Herda a cor verde */
+}
+
+/* Área de Output (Histórico) */
+#output {
+    min-height: 200px;
+    /* Faz a rolagem do output */
+    overflow-y: auto; 
+}
+
+/* Linha de Input (Entrada) */
+#input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#prompt {
+    margin-right: 8px;
+    /* Destaque para o prompt */
+    color: #ffffff; 
+}
+
+#command-input {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    flex-grow: 1;
+    outline: none;
+    caret-color: #00FF41; /* Cor do cursor piscando */
+}
+
+/* --- CLASSES DE DESTAQUE --- */
+
+.help-word {
+    color: #00FFFF;
+    font-weight: bold;
+}
+
+/* Estilo para mensagens de erro */
+.error-message {
+    color: #d6a913;
+    font-weight: bold;
+    text-shadow: 0 0 4px rgba(255, 145, 0, 0.5); 
+}
+
+.port {
+    color: #00FFFF;
+    font-weight: bold;
+    text-shadow: 0 0 4px rgba(106, 46, 202, 0.5);
+    font-size: 20px; 
+}
+
+.port2 {
+    color: #00FFFF;;
+    font-weight: bold;
+    text-shadow: 0 0 4px rgba(106, 46, 202, 0.5);
+    font-size: 17px;
+}
+
+.ASCII {
+    color: #dd6044; 
+    font-weight: bold;
+    text-shadow: 0 0 4px rgba(241, 142, 120, 0.5);
+}
+
+.line {
+    color: #c300ff;;
+    font-weight: bold;
+    text-shadow: 0 0 4px rgba(106, 46, 202, 0.5);
+}
