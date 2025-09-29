@@ -23,7 +23,8 @@ const ASCII_ART = `
 /_==__==========__==_ooo__ooo=_/'   /___________,"
 `;
 
-    const WELCOME_MESSAGE = `<span class="port">Paulo Henrique - Tech Analyst.</span>
+    const WELCOME_MESSAGE = `<span class="port">Meu portfólio - Paulo Tech Analyst [versão 1.0.0]</span>
+<span class="port">(c) Paulo Henrique. Todos os direitos reservados.</span>
 ${ASCII_ART}
 Digite <span class="help-word">'help'</span> para visualizar os comandos do portfólio.
 `;
@@ -40,25 +41,25 @@ Digite <span class="help-word">'help'</span> para visualizar os comandos do port
     // Mapeamentos dos comandos
     const commands = {
         'help': `<span class="port2">Comandos disponíveis:</span> 
-        - <span class="help-word">about</span>: Sobre mim, Paulo (Eng. Software, Geek).
-        - <span class="help-word">certs</span>: Minhas certificações (AZ-900, MS-900, etc.).
-        - <span class="help-word">devops</span>: Meu caminho para DevOps e Infraestrutura.
-        - <span class="help-word">contact</span>: Como entrar em contato.
-        - <span class="help-word">clear</span>: Limpa a tela.`,
+        - <span class="help-word">sobre</span>: Um pouco sobre mim, quem eu sou e meus hobbies.
+        - <span class="help-word">certificações</span>: Minhas certificações oficiais.
+        - <span class="help-word">experiências</span>: Meu caminho na TI e interesses na área.
+        - <span class="help-word">contato</span>: Como entrar em contato comigo.
+        - <span class="help-word">limpar</span>: Limpa a tela.`,
 
-        'about': `Olá, sou o Paulo! Estudante de Engenharia de Software. 
+        'sobre': `Olá, sou o Paulo! Estudante de Engenharia de Software. 
         Atualmente sou Analista de Suporte N2, focado em me tornar Analista de Infraestrutura de TI e, por fim, DevOps. 
         Sou um grande entusiasta de games e cultura geek.`,
         
-        'certs': `Certificações Atuais: AZ-900 e MS-900. 
+        'certificações': `Certificações Atuais: AZ-900 e MS-900. 
         Estudando para: ITIL 4, AWS AI Practioner e GitHub Foundations. 
         (Sempre em busca de conhecimento para a próxima etapa em Infraestrutura.)`,
         
-        'devops': `Minha jornada envolve automação, gerenciamento de ambientes Cloud (foco em Azure e AWS) e adoção de práticas de IaaC. Meu objetivo é fazer a ponte entre Desenvolvimento (Eng. Software) e Operações (Infraestrutura), usando as bases que obtive no Suporte N2.`,
+        'experiências': `Minha jornada envolve automação, gerenciamento de ambientes Cloud (foco em Azure e AWS) e adoção de práticas de IaaC. Meu objetivo é fazer a ponte entre Desenvolvimento (Eng. Software) e Operações (Infraestrutura), usando as bases que obtive no Suporte N2.`,
 
-        'contact': `Me encontre no LinkedIn ou envie um email: 
-        LinkedIn: [Seu Link] 
-        Email: [Seu Email]`,
+        'contato': `Me encontre no LinkedIn ou envie um email: 
+        LinkedIn: <a href="https://www.linkedin.com/in/euopaulo/"><span class="link1">Meu Perfil no LinkedIn</span></a> 
+        Email: <span class="link">paulo.henrg1@gmail.com</span>`,
     };
 
     // Função para adicionar uma nova linha de saída (sem a tag <pre>)
