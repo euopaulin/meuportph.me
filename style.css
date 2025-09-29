@@ -21,41 +21,77 @@ body {
     font-size: 17px;
     margin: 0;
     padding: 20px;
-    animation: fundoAnimado 7.5s infinite;
-    background: linear-gradient(-45deg, #0e0d0d, #092c1e);
+    animation: fundoAnimado 5s infinite;
+    background: linear-gradient(-45deg, #000000, #0b3625, #576e5f);
     background-size: 400% 2000%;
     transition: background 5s ease;
 }
 
+#header {
+    text-align: left;
+    border-radius: 13px 13px 13px 0px;
+    margin: 0px 0px 0px 0px;
+    color: #ffffff; /* Cor branca para o título */
+    background-color: #161616;
+    margin-right: 630px;
+}
+
+#header2 {
+    text-align: left;
+    border-radius: 0px 0px 13px 13px;
+    margin: 0px 0px 20px 0px;
+    color: #ffffff; /* Cor branca para o título */
+    background-color: #161616;
+    margin-right: 630px;
+}
+
+#header h1 {
+    font-size: 23px;
+    font-family: 'Fira Code', 'Inconsolata', monospace;
+    margin-left: 7px;
+}
+
 #terminal-container {
     width: 90%;
-    max-width: 900px;
+    height: auto;
+    border-radius: 13px;
+    max-height: 1100px;
+    max-width: 864px;
     margin: 0 auto;
+    box-shadow: #ffffff 0cap 0cap 0.2cap 0.2cap;
 }
 
 /* Garante que o texto da Arte ASCII preserve os espaços */
 #output pre {
-    margin: 0;
+    margin-left: 0px;
+    width: auto;
     white-space: pre;
     color: inherit; /* Herda a cor verde */
 }
 
 /* Área de Output (Histórico) */
 #output {
-    min-height: 200px;
+    margin-left: 20px;
+    width: auto;
     /* Faz a rolagem do output */
     overflow-y: auto; 
 }
 
 /* Linha de Input (Entrada) */
 #input-line {
+    margin-left: 20px;
+    width: auto;
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
 
 #prompt {
+    margin: 0px 0px 10px 0px;
     margin-right: 8px;
+    width: auto;
+    font-weight: bold;
+    overflow-y: auto;
     /* Destaque para o prompt */
     color: #ffffff; 
 }
@@ -69,6 +105,7 @@ body {
     flex-grow: 1;
     outline: none;
     caret-color: #00FF41; /* Cor do cursor piscando */
+    margin: 0px 0px 10px 0px;
 }
 
 /* --- CLASSES DE DESTAQUE --- */
@@ -89,7 +126,7 @@ body {
     color: #00FFFF;
     font-weight: bold;
     text-shadow: 0 0 4px rgba(106, 46, 202, 0.5);
-    font-size: 20px; 
+    font-size: 17px; 
 }
 
 .port2 {
@@ -100,13 +137,23 @@ body {
 }
 
 .ASCII {
-    color: #dd6044; 
+    color: #fa0303; 
     font-weight: bold;
-    text-shadow: 0 0 4px rgba(241, 142, 120, 0.5);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 .line {
     color: #c300ff;;
     font-weight: bold;
     text-shadow: 0 0 4px rgba(106, 46, 202, 0.5);
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link1 {
+    color: #ffffff;
+    text-decoration: underline;
 }
