@@ -54,7 +54,6 @@ body {
   width: 90%;
   height: auto;
   border-radius: 13px;
-  max-height: 1100px;
   max-width: 864px;
   margin: 0 auto;
   box-shadow: #ffffff 0cap 0cap 0.2cap 0.2cap;
@@ -145,6 +144,12 @@ body {
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
+.ASCII2 {
+  color: #f16846;
+  font-weight: bold;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
 .line {
   color: #c300ff;
   font-weight: bold;
@@ -159,4 +164,12 @@ body {
 .link1 {
   color: #ffffff;
   text-decoration: underline;
+}
+
+.gif {
+  display: block; 
+  width: 600px; 
+  height: 400px;
+  margin: 10px auto; 
+  border-radius: 13px;
 }
