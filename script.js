@@ -73,7 +73,9 @@ Digite <span class="help-word">'start'</span> para visualizar os comandos do por
         <span class="port2">LinkedIn:</span><a href="https://www.linkedin.com/in/euopaulo/"><span class="link1">Meu Perfil no LinkedIn</span></a> 
         <span class="port2">Email:</span><span class="link">paulo.henrg1@gmail.com</span>`,
 
-    mistery: `<img class="gif" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGh5Zm9rMG14eWx4MmJ4NzkwNWw0Nmc1YmE2aWo4ZmxhejJ2enNwOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/m2Q7FEc0bEr4I/giphy.gif" alt="Gif animado de boas-vindas" align="center" />`,
+    mistery: `<h1 class="message">Não é nada demais hahaha,
+     é apenas um <span class="cert">muito obrigado</span> pela sua visita ao meu portfólio!!
+    <img class="gif" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGh5Zm9rMG14eWx4MmJ4NzkwNWw0Nmc1YmE2aWo4ZmxhejJ2enNwOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/m2Q7FEc0bEr4I/giphy.gif" alt="Gif animado de boas-vindas" align="center" />`,
   };
 
   // Função para adicionar uma nova linha de saída (sem a tag <pre>)

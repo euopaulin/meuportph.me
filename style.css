@@ -141,14 +141,14 @@ body {
 }
 
 .ASCII {
-  color: #fa0303;
+  color: #ff0000;
   font-weight: bold;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   font-size: 17px;
 }
 
 .ASCII2 {
-  color: #afe69e;
+  color: #69ceb0;
   font-weight: bold;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   font-size: 17px;
@@ -178,9 +178,15 @@ body {
   border-radius: 13px;
 }
 
-
 .cert {
   color: #f09ef0;
   font-weight: bold;
   text-shadow: 0 0 4px rgba(255, 0, 255, 0.5);
+}
+
+.message {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
 }
