@@ -44,27 +44,36 @@ Digite <span class="help-word">'start'</span> para visualizar os comandos do por
         - <span class="help-word">exp</span>:<span class="info"> Meu caminho na TI e interesses na área.</span>
         - <span class="help-word">cert</span>:<span class="info"> Minhas certificações oficiais.</span>
         - <span class="help-word">contact</span>:<span class="info"> Como entrar em contato comigo.</span>
-        - <span class="help-word">gif</span>:<span class="info"> gif para alegrar seu dia.</span>
-        - <span class="help-word">clear</span>:<span class="info"> Limpa a tela.</span>`,
+        - <span class="help-word">clear</span>:<span class="info"> Limpa a tela.</span>
+        - <span class="help-word">mistery</span>:<span class="info"> Não entre aqui!!!!!</span>`,
 
-    about: `Olá, sou o Paulo! Estudante de Engenharia de Software do quarto semestre na UCB-DF. 
-        Sou um grande entusiasta de games e cultura geek.`,
+    about: `<span class="ASCII2">Olá, <span class="cert">me chamo Paulo!</span> Sou <span class="cert">estudante de Engenharia de Software do quarto semestre na UCB-DF.</span>
+    Tenho 25 anos e uma paixão enorme por tecnologia, especialmente na área de TI.
+    Essa paixão surgiu junto com meu interesse por videogames, o que me levou a explorar mais sobre computadores e tecnologia desde cedo.
+    Nas minhas horas livres, sou um grande entusiasta de games e da cultura geek.</span>`,
 
-    cert: `Certificações Atuais: AZ-900 e MS-900 e GitHub Foundations. 
-        Estudando para: ITIL 4, AWS AI Practioner que já estão agendadas para serem feitas ainda esse ano.`,
+    cert: `<span class="ASCII2">Certificações Atuais: <span class="cert">AZ-900</span>, <span class="cert">MS-900</span> e <span class="cert">GitHub Foundations</span>. 
+        Estudando para: <span class="cert">ITIL 4</span>, <span class="cert">AWS AI Practioner</span> que já estão agendadas para serem feitas ainda esse ano.</span>`,
 
-    exp: `<span class="link">Atualmente sou Analista de Suporte N2 no IPEA(Instituto de Pesquisa Econômica Aplicada), antes eu era suporte técnico N1 e N2 pela CastGroup. Tenho experiência com atendimento ao usuário, resolução de incidentes e suporte técnico.
+    exp: `<span class="ASCII2">Atualmente sou <span class="cert">Analista de Suporte N2 Pleno</span> no <span class="cert">IPEA (Instituto de Pesquisa Econômica Aplicada)</span>, antes eu era suporte técnico N1 e N2 pela CastGroup no IPEA também. Tenho experiência com atendimento ao usuário, resolução de incidentes e suporte técnico.
+
         Tenho grande interesse na área de software, bem como desenvolvimento e infraestrutura (DevOps).
-        Possuo conhecimentos em linguagens como Python, PowerShell, JavaScript, HTML/CSS. Também tenho experiência com ferramentas como Git e GitHub, Docker, e conhecimento em plataformas de nuvem como AWS e Azure.
-        Já atuei com automação de tarefas, monitoramento de sistemas e suporte a aplicações web, além de conhecimento em Linux e suas distribuições.
-        Também já trabalhei com metodologias ágeis como Scrum e Kanban.
-        Tenho interesse em aprender sobre Inteligência Artificial e Machine Learning, tendo projetos reais em meu GitHub sobre treinamento de modelos de LLM locais e interação com o bedrock da AWS.</span>`,
+
+        Possuo conhecimentos em linguagens como <span class="cert">Python</span>, <span class="cert">PowerShell</span>, <span class="cert">JavaScript</span>, <span class="cert">HTML/CSS</span>. Também tenho experiência com ferramentas como <span class="cert">Git</span> e <span class="cert">GitHub</span>, <span class="cert">Docker</span>, <span class="cert">Postaman</span> e integração de APIs.
+
+        Possuo conhecimento em plataformas de nuvem como <span class="cert">AWS</span> e <span class="cert">Azure</span>.
+
+        Já atuei com automação de tarefas, monitoramento de sistemas e suporte a <span class="cert">aplicações web</span>, além de conhecimento em <span class="cert">Linux</span>.
+
+        Também já trabalhei com metodologias ágeis como <span class="cert">Scrum</span> e <span class="cert">Kanban</span>.
+
+        Tenho interesse em aprender sobre <span class="cert">Inteligência Artificial</span> e <span class="cert">Machine Learning</span>, tendo feito projetos reais em meu GitHub sobre treinamento de modelos de LLM locais e interação com o bedrock da AWS.</span>`,
 
     contact: `<span class="ASCII2">Me encontre no LinkedIn ou envie um email:</span>
         <span class="port2">LinkedIn:</span><a href="https://www.linkedin.com/in/euopaulo/"><span class="link1">Meu Perfil no LinkedIn</span></a> 
         <span class="port2">Email:</span><span class="link">paulo.henrg1@gmail.com</span>`,
 
-    gif: `<img class="gif" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGh5Zm9rMG14eWx4MmJ4NzkwNWw0Nmc1YmE2aWo4ZmxhejJ2enNwOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/m2Q7FEc0bEr4I/giphy.gif" alt="Gif animado de boas-vindas" align="center" />`,
+    mistery: `<img class="gif" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGh5Zm9rMG14eWx4MmJ4NzkwNWw0Nmc1YmE2aWo4ZmxhejJ2enNwOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/m2Q7FEc0bEr4I/giphy.gif" alt="Gif animado de boas-vindas" align="center" />`,
   };
 
   // Função para adicionar uma nova linha de saída (sem a tag <pre>)

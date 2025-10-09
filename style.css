@@ -70,9 +70,11 @@ body {
 /* Área de Output (Histórico) */
 #output {
   margin-left: 20px;
+  margin-right: 15px;
   width: auto;
   /* Faz a rolagem do output */
   overflow-y: auto;
+  margin-top: 10px;
 }
 
 /* Linha de Input (Entrada) */
@@ -142,12 +144,14 @@ body {
   color: #fa0303;
   font-weight: bold;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size: 17px;
 }
 
 .ASCII2 {
-  color: #f16846;
+  color: #afe69e;
   font-weight: bold;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size: 17px;
 }
 
 .line {
@@ -172,4 +176,11 @@ body {
   height: 400px;
   margin: 10px auto; 
   border-radius: 13px;
+}
+
+
+.cert {
+  color: #f09ef0;
+  font-weight: bold;
+  text-shadow: 0 0 4px rgba(255, 0, 255, 0.5);
 }
