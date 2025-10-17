@@ -8,53 +8,42 @@ on:
       - 'index.html'
       - 'style.css'
       - 'script.js'
-
+      
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Atualizado para v4
 
-      # Passo 1: Configurar Node.js (necessário para o ambiente da action de deploy)
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4 # Atualizado para v4
         with:
-          node-version: '18' # Use uma versão LTS estável
+          node-version: '20' # Recomendado usar a LTS mais recente (20)
 
-      # Passo 2: Configurar o GitHub Pages
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5 # Atualizado para v5 (Versão mais recente)
 
-      # Passo 3: Construir (se necessário - para um site estático simples, pode ser só copiar)
-      # Se você tiver um processo de build (como Next.js, Hugo, etc.), adicione-o aqui.
-      # Para um site estático simples com apenas HTML/CSS/JS, este passo é opcional
-      # ou pode ser substituído por uma action que empacota seus arquivos.
-      - name: Build with a sample script (Opcional)
-        run: echo "No build step needed for simple static files, just moving them to _site"
-        # Se você usa um gerador de site estático, use:
-        # run: npm run build
-      
-      # Passo 4: Subir os Artefatos (Arquivos Estáticos)
-      # O deploy para o Pages usa artefatos. O diretório '_site' é o padrão,
-      # mas você pode mudar para a pasta onde seus arquivos estão (ex: 'dist' ou '.', se estiverem na raiz).
+      # Passo de Build/Cópia dos arquivos (Opcional, se não houver build step)
+      - name: Copy files (if no build is needed)
+        run: echo "No build step, proceeding to artifact upload"
+        
+      # Passo Crucial: Atualizar a action de upload para a v3 (a v2 causa o erro)
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3 # <--- ATUALIZE PARA V3
         with:
-          path: . # Altere para o diretório de saída do seu build (ex: 'dist' ou 'build')
-                   # Se todos os arquivos estão na raiz do repositório, use '.'
-
-  # Novo Job: Deploy
+          path: . 
+          
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build # Garante que o deploy só rode após o build/upload
+    needs: build 
     permissions:
-      pages: write # Permissão para escrever no GitHub Pages
-      id-token: write # Permissão para autenticação OpenID Connect
+      pages: write 
+      id-token: write 
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4 # <--- ATUALIZE PARA V4
