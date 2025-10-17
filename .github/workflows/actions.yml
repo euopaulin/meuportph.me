@@ -5,10 +5,13 @@ on:
       - main
     paths:
       - '.github/workflows/actions.yml'
-      - 'index.html'
+      - 'main.html'
       - 'style.css'
       - 'script.js'
-      
+      - 'images/**'
+      - 'PaginaCLI/**'
+      - 'PaginaWeb/**'
+
 jobs:
   build:
     runs-on: ubuntu-latest
