@@ -35,6 +35,9 @@ body {
     text-shadow: #151a0e 1px 1px 2px;
     font-family: "Pixelify Sans", sans-serif;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .titulo p{
@@ -43,10 +46,24 @@ body {
     font-size: 20px;
     text-shadow: #151a0e 1px 1px 2px;
     font-family: "Unbounded", cursive;
+    text-shadow: white 0px 0px 2.5px;
+}
+
+.titulo2 {
+    text-align: center;
+    margin: 10px 500px 0px 500px;
+    padding: 10px;
+    color: aliceblue;
+    text-shadow: #151a0e 1px 1px 2px;
+    font-family: "Unbounded", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .escolha {
-    padding: 200px 0px 0px 0px;
+    padding: 150px 0px 0px 0px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -74,10 +91,14 @@ body {
 
 .creditos {
     text-align: center;
-    margin: 200px 0px 20px 0px;
+    margin: 250px 0px 20px 0px;
     padding: 20px;
     color: aliceblue;
     text-shadow: #151a0e 1px 1px 2px;
     font-family: "Unbounded", serif;
     font-size: 11px;
+}
+
+.pag {
+  color: #39b3a2;
 }
