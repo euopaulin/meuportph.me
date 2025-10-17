@@ -5,7 +5,7 @@ on:
       - main
     paths:
       - '.github/workflows/actions.yml'
-      - 'main.html'
+      - 'index.html'
       - 'style.css'
       - 'script.js'
       - 'images/**'
