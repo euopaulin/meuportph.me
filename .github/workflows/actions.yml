@@ -1,69 +1,51 @@
-name: CI/CD do Portfólio (meuportph.me)
+name: CI/CD do Portfólio (meuportfph.site)
 
-# Gatilho: Roda em todo push na branch 'main' que afete os arquivos listados.
 on:
   push:
     branches:
       - main
     paths:
-      - '.github/workflows/actions.yml'
-      - 'CNAME'          # Inclui o arquivo do domínio personalizado
-      - 'index.html'     # Seu arquivo principal
-      - 'style.css'      # Seu CSS principal
-      - 'script.js'      # Seu JS principal (se existir)
-      - 'images/**'      # Inclui todos os arquivos na pasta images
-      - 'PaginaCLI/**'   # Inclui todo o conteúdo da PaginaCLI
-      - 'PaginaWeb/**'   # Inclui todo o conteúdo da PaginaWeb
-      - 'PaginaWeb/ambiente.yml' # Arquivos específicos, se desejar
+      # Removido '.github/workflows/actions.yml'
+      - 'CNAME'
+      - 'index.html'
+      - 'style.css'
+      - 'script.js'
+      - 'images/**'
+      - 'PaginaCLI/**'
+      - 'PaginaWeb/**'
+      - 'PaginaWeb/ambiente.yml'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: 1. Checkout do Repositório (actions/checkout@v4)
-        # Pega o código do repositório
+      - name: 1. Checkout do Repositório
         uses: actions/checkout@v4
 
-      # O Node.js é opcional para sites estáticos, mas manteremos
-      # para compatibilidade com a action de pages, se necessário.
-      - name: 2. Configura Node.js (actions/setup-node@v4)
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+      # Removidos passos de Node.js e configure-pages
 
-      - name: 3. Configura GitHub Pages (actions/configure-pages@v5)
-        # Define as variáveis de ambiente necessárias para o deploy
-        uses: actions/configure-pages@v5
-
-      # Opcional: Para evitar que o GitHub tente usar o Jekyll
-      # (Se você não estiver usando Jekyll, isso evita problemas com arquivos com underscore)
-      - name: 4. Criar arquivo .nojekyll
+      - name: 2. Criar arquivo .nojekyll
+        # Garante que arquivos com '_' no nome (comum em assets) não sejam ignorados
         run: touch .nojekyll
 
-      - name: 5. Upload do Artefato (actions/upload-pages-artifact@v3)
-        # Empacota TODO o repositório para o deploy
+      - name: 3. Upload do Artefato
         uses: actions/upload-pages-artifact@v3
         with:
-          # O ponto '.' garante que index.html, CNAME e as subpastas
-          # (images, PaginaCLI, PaginaWeb) fiquem na raiz do site publicado.
-          path: . 
+          path: . # Empacota o conteúdo da raiz
 
   deploy:
     environment:
-      # Nome do ambiente configurado no GitHub Pages
       name: github-pages
-      # URL que será exibida após o deploy (seu domínio personalizado)
       url: ${{ steps.deployment.outputs.page_url }}
     
     runs-on: ubuntu-latest
-    needs: build # Depende do job 'build' ter terminado com sucesso
+    needs: build
     
-    # Permissões Mínimas Necessárias
     permissions:
       pages: write 
       id-token: write 
       
     steps:
-      - name: 6. Deploy no GitHub Pages (actions/deploy-pages@v4)
+      - name: 4. Deploy no GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
