@@ -5,7 +5,6 @@ on:
     branches:
       - main
     paths:
-      # Removido '.github/workflows/actions.yml'
       - 'CNAME'
       - 'index.html'
       - 'style.css'
@@ -22,8 +21,6 @@ jobs:
       - name: 1. Checkout do Repositório
         uses: actions/checkout@v4
 
-      # Removidos passos de Node.js e configure-pages
-
       - name: 2. Criar arquivo .nojekyll
         # Garante que arquivos com '_' no nome (comum em assets) não sejam ignorados
         run: touch .nojekyll
@@ -31,7 +28,7 @@ jobs:
       - name: 3. Upload do Artefato
         uses: actions/upload-pages-artifact@v3
         with:
-          path: . # Empacota o conteúdo da raiz
+          path: .
 
   deploy:
     environment:
