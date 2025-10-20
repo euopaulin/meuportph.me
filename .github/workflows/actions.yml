@@ -14,6 +14,8 @@ on:
       - 'PaginaCLI/**'
       - 'PaginaWeb/**'
       - 'PaginaWeb/ambiente.yml'
+      - 'PaginaCLI/index.html'
+      - 'PaginaWeb/index.html'
 
 jobs:
   build:
