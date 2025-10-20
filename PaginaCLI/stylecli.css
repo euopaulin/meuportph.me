@@ -20,7 +20,7 @@ body {
   font-size: 17px;
   margin: 0;
   padding: 20px;
-  animation: fundoAnimado 3s infinite;
+  animation: fundoAnimado 6s infinite;
   background: linear-gradient(-45deg, #000000, #072217, #1b3526);
   background-size: 400% 2000%;
   transition: background 5s ease;
