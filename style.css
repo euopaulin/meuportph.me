@@ -6,7 +6,6 @@
 body {
   margin: 0;
   font: normal 75% Arial, Helvetica, sans-serif;
-  background-color: #212122;
 }
 
 canvas {
@@ -14,17 +13,15 @@ canvas {
   vertical-align: bottom;
 }
 
-/* ---- particles.js container ---- */
-/* Configuração do fundo de partículas */
 #particles-js {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0; /* Adicionado para garantir o topo */
-  left: 0; /* Adicionado para garantir a esquerda */
-  z-index: 1; /* Manda o fundo para trás */
+  top: 0;
+  left: 0; 
+  z-index: 1; 
   pointer-events: auto;
-  background-color: #212122;
+  background-color: #071322;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,8 +46,8 @@ canvas {
 .titulo2,
 .escolha,
 .creditos {
-  position: relative; /* Cria um contexto de empilhamento */
-  z-index: 1; /* Garante que o conteúdo fique acima do z-index: -1 do #particles-js */
+  position: relative; 
+  z-index: 1; 
   pointer-events: none;
 }
 
