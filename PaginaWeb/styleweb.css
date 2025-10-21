@@ -1,5 +1,5 @@
 /* ESTILO GERAL */
-@keyframes fundoAnimado {
+/*@keyframes fundoAnimado {
   0% {
     background-position: 0% 50%;
   }
@@ -9,7 +9,7 @@
   100% {
     background-position: 0% 50%;
   }
-}
+}*/
 * {
   margin: 0;
   padding: 0;
