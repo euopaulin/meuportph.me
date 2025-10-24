@@ -311,7 +311,6 @@ section.sobre .flex {
 
 section.portfolio {
   padding: 80px 4%;
-  box-shadow: 0 0 40px #ffffff17;
 }
 
 section.portfolio .flex {
@@ -360,6 +359,7 @@ section.portfolio .flex {
   color: white;
   font-size: 33px;
   text-align: center;
+  margin: 0px 0px 20px 0px;
 }
 
 .portfolio h2 span {
@@ -373,7 +373,8 @@ section.portfolio .flex {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  box-shadow: black 0px 0px 8px 2px;
+  margin: 0px 300px 0px 300px;
+  border-radius: 8px;
 }
 
 .portfolio-item h3 {
@@ -395,6 +396,11 @@ section.portfolio .flex {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0px 0px 1000px 0px;
+}
+
+.ScriptLinux {
+  margin: 0px 0px 1000px 0px;
 }
 
 /*ESTILO DO FORMULARIO DE CONTATO */
@@ -436,11 +442,19 @@ form .btn-enviar {
 
 form .btn-enviar input {
   width: 120px;
+  height: 50px;
   background-color: rgb(76, 249, 255);
   color: black;
   font-weight: 700;
   cursor: pointer;
   transition: 2s;
+}
+
+form .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
 }
 
 /*ESTILO DO RODAPÉ*/
@@ -538,24 +552,8 @@ footer .line-footer p a {
     padding: 80px 8%;
   }
 
-  .img-port {
-    width: 360px;
-    height: 450px;
-    background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
-    border-radius: 40px;
-    position: relative;
-  }
-
-  .img-port {
-    width: 100%;
-    max-width: 360px;
-    margin: 0 auto;
-  }
-
-  section.portfolio .flex {
-    gap: 60px;
+  .container h2 {
+    margin: 10px 0px 0px 0px;
   }
 
   /*RODAPÉ*/
